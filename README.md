@@ -185,7 +185,6 @@ Bankmanagement/
 
 ## Author
 
-Wipro Bank Management System   
 
 
 javac -cp "lib/mysql-connector-j-9.4.0.jar" -d out src/Main.java src/db/DatabaseConnection.java src/model/Account.java src/service/BankService.java
