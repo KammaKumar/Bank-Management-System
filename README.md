@@ -64,7 +64,7 @@ Traditional command-line interface for terminal users.
 Update database credentials in `src/db/DatabaseConnection.java` if needed:
 ```java
 private static final String USER = "root";     // Your MySQL username
-private static final String PASSWORD = "1234";  // Your MySQL password
+private static final String PASSWORD = "your password";  // Your MySQL password
 ```
 
 ## How to Run
@@ -185,4 +185,18 @@ Bankmanagement/
 
 ## Author
 
-Wipro Bank Management System
+Wipro Bank Management System   
+
+
+javac -cp "lib/mysql-connector-j-9.4.0.jar" -d out src/Main.java src/db/DatabaseConnection.java src/model/Account.java src/service/BankService.java
+
+
+java -cp "out;lib/mysql-connector-j-9.4.0.jar" Main
+
+
+
+D:\certificates\Bankmanagement>javac -cp "lib/mysql-connector-j-9.4.0.jar" -d out src/BankGUI.java src/Main.java src/db/DatabaseConnection.java src/model/Account.java src/service/BankService.java
+
+D:\certificates\Bankmanagement>java -cp "out;lib/mysql-connector-j-9.4.0.jar" BankGUI
+
+D:\certificates\Bankmanagement>java -cp "out;lib/mysql-connector-j-9.4.0.jar" Main
